@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harish Prabu S — Portfolio (Professional)</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' };</script>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/6 dark:bg-black/10">
+    <div class="flex items-center gap-4">
+      <div class="text-2xl font-extrabold"><span class="text-[#FFD700] dark:text-[#FF8C00]">Harish</span> Prabu S</div>
+
+      <!-- top social icons (desktop only) -->
+      <div class="social-top hidden md:flex items-center gap-3 ml-6">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub" class="text-darkblue-200 dark:text-gray-300"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-darkblue-200 dark:text-gray-300"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="mailto:harishprabu@example.com" aria-label="Email" class="text-darkblue-200 dark:text-gray-300"><i class="fas fa-envelope fa-lg"></i></a>
+        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram" class="text-darkblue-200 dark:text-gray-300"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex gap-8 font-semibold text-sm">
+      <a href="#hero" class="hover:text-[#FFD700]">Home</a>
+      <a href="#about" class="hover:text-[#FFD700]">About</a>
+      <a href="#skills" class="hover:text-[#FFD700]">Skills</a>
+      <a href="#projects" class="hover:text-[#FFD700]">Projects</a>
+      <a href="#internship" class="hover:text-[#FFD700]">Internships</a>
+      <a href="#education" class="hover:text-[#FFD700]">Education</a>
+      <a href="#experience" class="hover:text-[#FFD700]">Experience</a>
+      <a href="#contact" class="hover:text-[#FFD700]">Contact</a>
+    </nav>
+<button id="themeToggle" aria-label="Toggle dark/light theme" class="p-2 rounded-md">
+  <i id="themeIcon" class="fas fa-moon text-[#FFD700]"></i>
+</button>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- HERO -->
+     
+    <section id="hero" class="section min-h-screen flex flex-col items-center justify-center text-center px-6 py-12">
+  <h2 id="welcomeText" class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#FFD700] dark:text-[#FF8C00] mb-4"></h2>
+  <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3">I'm <span class="text-[#FFD700] dark:text-[#FF8C00]">Harish Prabu S</span></h1>
+  <p class="text-lg md:text-xl font-semibold muted mb-6">
+    <span id="typing" class="text-lg md:text-xl"></span>
+  </p>
+
+  <div class="flex justify-center items-center w-full mt-12">
+    <div id="globe-container" class="mx-auto"></div>
+  </div>
+
+  <div class="max-w-xl text-left space-y-4 mt-8">
+    <p class="card">Hi — I build web apps and 3D experiences. I focus on performant code, polished UI and meaningful UX. I enjoy solving problems and turning ideas into production-ready projects.</p>
+    <div class="flex gap-3">
+      <a class="btn-accent" href="#projects">See Projects</a>
+      <a class="btn-accent" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section px-6 md:px-16 py-16">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-extrabold text-[#FFD700] dark:text-[#FF8C00] mb-6">About Me</h3>
+        <p class="muted text-lg">I’m a Full Stack & Python developer (B.E. CSE 2025). I love building polished frontends, reliable backends, and interesting visualizations. I’ve shipped apps that use React, Django, Firebase, and 3D libraries like Three.js.</p>
+        <p class="mt-4 muted">I’m currently open to internships and junior developer roles — I enjoy fast-paced teams and learning new patterns & tools.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section px-6 md:px-16 py-16 bg-[var(--card-strong)] dark:bg-white/90">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-extrabold text-[#FFD700] dark:text-[#FF8C00] text-center mb-8">Skills & Tools</h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <!-- skill -->
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <div class="font-semibold">HTML5</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <div class="font-semibold">CSS3</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <div class="font-semibold">JavaScript</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <div class="font-semibold">React</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <div class="font-semibold">Python</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+            <div class="font-semibold">Django</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+            <div class="font-semibold">Firebase</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+            <div class="font-semibold">MySQL</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <div class="font-semibold">Git</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <i class="fab fa-node fa-3x mb-2"></i>
+            <div class="font-semibold">Node.js</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <i class="fas fa-server fa-3x mb-2"></i>
+            <div class="font-semibold">REST APIs</div>
+          </div>
+
+          <div class="card skill-item flex flex-col items-center justify-center p-6">
+            <i class="fas fa-cubes fa-3x mb-2"></i>
+            <div class="font-semibold">Docker</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section px-6 md:px-16 py-16">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-extrabold text-[#FFD700] dark:text-[#FF8C00] text-center mb-8">Selected Projects</h3>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <article class="card">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h4 class="text-xl font-bold text-[#FFD700] dark:text-[#FF8C00] mb-1">Maverkflix</h4>
+                <div class="muted">React • Firebase • Video Streaming UX</div>
+              </div>
+              <div class="project-badge">Featured</div>
+            </div>
+
+            <p class="mt-3">Custom streaming platform with user auth, playlists, watch history, and a performant custom video player supporting adaptive quality.</p>
+
+            <ul class="mt-3 list-disc list-inside muted">
+              <li>Adaptive streaming & buffering optimization</li>
+              <li>Protected routes & role-based access</li>
+              <li>Cloud storage with CDN integration</li>
+            </ul>
+
+            <div class="mt-4 flex gap-3">
+              <a class="underline-link text-[#FFD700] dark:text-[#FF8C00]" href="#" target="_blank">Live Demo</a>
+              <a class="underline-link text-[#FFD700] dark:text-[#FF8C00]" href="#" target="_blank">GitHub Repo</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card">
+            <h4 class="text-xl font-bold text-[#FFD700] dark:text-[#FF8C00] mb-1">BikeInfo — Comparison Tool</h4>
+            <div class="muted">Vanilla JS • REST APIs • Mobile-first</div>
+            <p class="mt-3">A fast comparison site aggregating bike specifications and review data, with offline-capable cache and PWA features.</p>
+            <ul class="mt-3 list-disc list-inside muted">
+              <li>Debounced search and smart filtering</li>
+              <li>IndexedDB caching for offline usage</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a class="underline-link text-[#FFD700] dark:text-[#FF8C00]" href="#" target="_blank">Demo</a>
+              <a class="underline-link text-[#FFD700] dark:text-[#FF8C00]" href="#" target="_blank">Source</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card">
+            <h4 class="text-xl font-bold text-[#FFD700] dark:text-[#FF8C00] mb-1">Auto Question Paper Generator</h4>
+            <div class="muted">Python • Django • SQLite</div>
+            <p class="mt-3">Generate randomized question papers by difficulty, topic, and type. Includes PDF export & teacher dashboard.</p>
+            <ul class="mt-3 list-disc list-inside muted">
+              <li>Difficulty-weighted randomization algorithm</li>
+              <li>CSV import of question bank</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a class="underline-link text-[#FFD700] dark:text-[#FF8C00]" href="#" target="_blank">Repo</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card">
+            <h4 class="text-xl font-bold text-[#FFD700] dark:text-[#FF8C00] mb-1">Online Attendance System</h4>
+            <div class="muted">Django • JS • Reports</div>
+            <p class="mt-3">Role-based attendance app for classrooms with CSV export and analytics dashboards.</p>
+            <div class="mt-4 flex gap-3">
+              <a class="underline-link text-[#FFD700] dark:text-[#FF8C00]" href="#" target="_blank">Demo</a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="card">
+            <h4 class="text-xl font-bold text-[#FFD700] dark:text-[#FF8C00] mb-1">Portfolio Website (This site)</h4>
+            <div class="muted">HTML • Tailwind • Three.js • GSAP</div>
+            <p class="mt-3">Interactive portfolio with 3D globe, theme toggle, contact form, and animated sections.</p>
+            <div class="mt-4 flex gap-3">
+              <a class="underline-link text-[#FFD700] dark:text-[#FF8C00]" href="#" target="_blank">Source</a>
+            </div>
+          </article>
+
+          <!-- Project 6 (bonus) -->
+          <article class="card">
+            <h4 class="text-xl font-bold text-[#FFD700] dark:text-[#FF8C00] mb-1">Mini ML Tools</h4>
+            <div class="muted">Python • Pandas • Scikit-learn</div>
+            <p class="mt-3">A set of small ML utilities: data cleaning pipeline, model training script templates and cross-validation harnesses for experiments.</p>
+            <div class="mt-4 flex gap-3">
+              <a class="underline-link text-[#FFD700] dark:text-[#FF8C00]" href="#" target="_blank">Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- EDUCATION -->
+<section id="education" class="section px-6 md:px-16 py-16 bg-[var(--card-strong)] dark:bg-white">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-extrabold text-[#FFD700] dark:text-[#FF8C00] text-center mb-12">
+      Education
+    </h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- SSLC -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fas fa-school fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold">SSLC — 2017</h4>
+        <p class="muted">Dr. V. G. N. Matric Higher Secondary School</p>
+      </div>
+
+      <!-- HSC -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fas fa-school fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold">HSC — 2019–2020</h4>
+        <p class="muted">Dr. V. G. N. Matric Higher Secondary School</p>
+      </div>
+
+      <!-- College -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fas fa-university fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold">B.E. Computer Science Engineering</h4>
+        <p class="muted">GRT Institute of Engineering and Technology</p>
+        <p class="mt-2 font-semibold">CGPA: 8.23</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- INTERNSHIPS & WORKSHOPS -->
+  <section id="projects" class="section px-6 md:px-16 py-16">
+<div class="max-w-6xl mx-auto">
+  <h3 class="text-3xl font-extrabold text-[#FFD700] dark:text-[#FF8C00] text-center mb-8">Internships & Workshops</h3>
+
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="card p-6 rounded-2xl shadow-lg 
+                  bg-white text-black 
+                  dark:bg-[#001F54] dark:text-white transition duration-300">
+        <h4 class="font-bold text-[#FFD700] dark:text-[#FF8C00]">
+          Pyroferos — QA & Software Testing
+        </h4>
+        <div class="font-bold text-white dark:text-[#0A1172]200">
+          Manual & Automated Testing
+        </div>
+        <p class="mt-3">
+          Wrote test cases, executed test runs, filed defects with reproduction steps and logs. Learned STLC and reporting workflows.
+        </p>
+        <ul class="mt-3 list-disc list-inside">
+          <li>Created regression suites</li>
+          <li>Introduced automated smoke tests</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card p-6 rounded-2xl shadow-lg 
+                  bg-white text-black 
+                  dark:bg-[#001F54] dark:text-white transition duration-300">
+        <h4 class="font-bold text-[#FFD700] dark:text-[#FF8C00]">
+          TechCore — Python Development Intern
+        </h4>
+        <div class="font-bold text-white dark:text-[#0A1172]200">
+          Automation & Scripting
+        </div>
+        <p class="mt-3">
+          Built automation scripts using Python and libraries like Pandas to speed up data processing tasks.
+        </p>
+        <ul class="mt-3 list-disc list-inside">
+          <li>Data pipelines & ETL automation</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card p-6 rounded-2xl shadow-lg 
+                  bg-white text-black 
+                  dark:bg-[#001F54] dark:text-white transition duration-300">
+        <h4 class="font-bold text-[#FFD700] dark:text-[#FF8C00]">
+          NIIT Workshop — Java & Python
+        </h4>
+        <div class="font-bold text-white dark:text-[#0A1172]200">
+          Hands-on Workshop
+        </div>
+        <p class="mt-3">
+          Attended a focused workshop on core concepts, OOP, and building small team projects.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card p-6 rounded-2xl shadow-lg 
+                  bg-white text-black 
+                  dark:bg-[#001F54] dark:text-white transition duration-300">
+        <h4 class="font-bold text-[#FFD700] dark:text-[#FF8C00]">
+          Hackathons
+        </h4>
+        <div class="font-bold text-white dark:text-[#0A1172]200">
+          Organizer & Participant
+        </div>
+        <p class="mt-3">
+          Organized campus hackathons and participated in several competitive events building prototypes under time constraints.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card p-6 rounded-2xl shadow-lg 
+                  bg-white text-black 
+                  dark:bg-[#001F54] dark:text-white transition duration-300">
+        <h4 class="font-bold text-[#FFD700] dark:text-[#FF8C00]">
+          Workshops — Web Security & Testing
+        </h4>
+        <div class="font-bold text-white dark:text-[#0A1172]200">
+          Security basics
+        </div>
+        <p class="mt-3">
+          Learned OWASP basics, input validation techniques and secure coding practices.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+ <section id="internship" class="section px-6 md:px-16 py-16 bg-[var(--card-strong)] dark:bg-white">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-extrabold text-[#FFD700] dark:text-[#FF8C00] text-center mb-8">
+      Experience
+    </h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Experience 1 -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fas fa-code fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold mb-2">Frontend Developer Intern</h4>
+        <div class="font-bold text-black dark:text-[#0A1172]200">
+        <p>Built responsive UI components using React & Tailwind CSS, optimized performance, and improved accessibility.</p>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fas fa-server fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold mb-2">Backend Developer</h4>
+        <div class="font-bold text-black dark:text-[#0A1172]200">
+        <p>Developed RESTful APIs using Django, handled authentication, and integrated third-party services.</p>
+      </div>
+      </div>
+
+      <!-- Experience 3 -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fas fa-vial fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold mb-2">Software Tester</h4>
+        <div class="font-bold text-black dark:text-[#0A1172]200">
+        <p>Performed manual & automated testing, created test cases, executed regression testing, and maintained QA documentation.</p>
+      </div>
+      </div>
+
+      <!-- Experience 4 -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fab fa-python fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold mb-2">Python Developer</h4>
+        <div class="font-bold text-black dark:text-[#0A1172]200">
+        <p>Automated data processing tasks, built scripts for reporting, and supported backend services with Python.</p>
+      </div>
+      </div>
+
+      <!-- Experience 5 -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fas fa-rocket fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold mb-2">Hackathon Participant</h4>
+        <div class="font-bold text-black dark:text-[#0A1172]200">
+        <p>Developed rapid prototypes under time constraints, collaborated in teams, and delivered innovative solutions.</p>
+      </div>
+      </div>
+
+      <!-- Experience 6 -->
+      <div class="card p-6 rounded-xl shadow-md bg-white dark:bg-[#001F54] dark:text-white flex flex-col items-center text-center">
+        <i class="fas fa-globe fa-3x text-[#FFD700] dark:text-[#FF8C00] mb-4"></i>
+        <h4 class="text-xl font-bold mb-2">Freelance Developer</h4>
+        <div class="font-bold text-black dark:text-[#0A1172]200">
+        <p>Designed and deployed websites for small businesses, provided full-stack solutions, and ensured production readiness.</p>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-extrabold text-center text-black dark:text-white mb-16">
+      Let’s Connect ✨
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      
+      <!-- Contact Info -->
+      <div class="space-y-8 text-center md:text-left">
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          Whether you have a project in mind, a collaboration idea, or just want to say hello, 
+          I’d love to hear from you. Let’s build something amazing together!
+        </p>
+
+        <!-- Contact Details -->
+        <div class="space-y-5">
+          <div class="flex items-center gap-4 justify-center md:justify-start">
+            <div class="p-3 rounded-full bg-blue-100 dark:bg-blue-900">
+              <i class="fas fa-envelope text-blue-600 dark:text-blue-300 text-lg"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200">harishprabu@example.com</span>
+          </div>
+          <div class="flex items-center gap-4 justify-center md:justify-start">
+            <div class="p-3 rounded-full bg-green-100 dark:bg-green-900">
+              <i class="fas fa-phone text-green-600 dark:text-green-300 text-lg"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200">+91 98765 43210</span>
+          </div>
+          <div class="flex items-center gap-4 justify-center md:justify-start">
+            <div class="p-3 rounded-full bg-red-100 dark:bg-red-900">
+              <i class="fas fa-map-marker-alt text-red-600 dark:text-red-300 text-lg"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200">Chennai, India</span>
+          </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center md:justify-start gap-6 mt-10">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"
+            class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-blue-600 hover:text-white transition transform hover:scale-110 shadow-lg">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" title="LinkedIn Profile"
+            class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-blue-600 hover:text-white transition transform hover:scale-110 shadow-lg">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          <a href="mailto:harishprabu@example.com" title="Email Harish Prabu"
+            class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-blue-600 hover:text-white transition transform hover:scale-110 shadow-lg">
+            <i class="fas fa-envelope fa-lg"></i>
+          </a>
+          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" title="Instagram Profile"
+            class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-yellow-500 dark:hover:bg-pink-600 hover:text-white transition transform hover:scale-110 shadow-lg">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </div>
+      </div>
+
+ <!-- Contact Form -->
+      <form id="contactForm" class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col space-y-6">
+        <div>
+          <label for="name" class="block text-sm font-semibold text-gray-700 dark:text-gray-200">Name</label>
+          <input type="text" name="name" id="name" required
+            class="w-full mt-2 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white">
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-semibold text-gray-700 dark:text-gray-200">Email</label>
+          <input type="email" name="email" id="email" required
+            class="w-full mt-2 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white">
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-semibold text-gray-700 dark:text-gray-200">Message</label>
+          <textarea name="message" id="message" rows="5" required
+            class="w-full mt-2 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"></textarea>
+        </div>
+
+        <!-- Make button stick to bottom if form grows -->
+        <div class="mt-auto">
+          <button type="submit"
+            class="w-full py-3 px-6 bg-yellow-500 dark:bg-yellow-400 text-gray-900 dark:text-gray-900 font-semibold rounded-lg shadow-md hover:bg-yellow-600 dark:hover:bg-yellow-300 transition duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="mt-16 py-10 bg-gray-900 dark:bg-gray-100 transition-colors duration-300">
+  <div class="max-w-6xl mx-auto text-center space-y-6">
+    
+    <!-- Social Icons -->
+    <div class="flex justify-center items-center gap-8">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener" title="GitHub Profile"
+         class="text-gray-400 dark:text-gray-600 transform hover:scale-110 transition duration-300
+                hover:text-yellow-400 dark:hover:text-yellow-400">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" title="LinkedIn Profile"
+         class="text-gray-400 dark:text-gray-600 transform hover:scale-110 transition duration-300
+                hover:text-yellow-400 dark:hover:text-yellow-400">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="mailto:harishprabu@example.com" title="Email Harish Prabu"
+         class="text-gray-400 dark:text-gray-600 transform hover:scale-110 transition duration-300
+                hover:text-yellow-400 dark:hover:text-yellow-400">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
+      <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" title="Instagram Profile"
+         class="text-gray-400 dark:text-gray-600 transform hover:scale-110 transition duration-300
+            hover:text-yellow-400 dark:hover:text-yellow-400">
+        <i class="fab fa-instagram fa-2x"></i>
+        <span class="sr-only">Instagram</span>
+      </a>
+    </div>
+    
+    <!-- Divider -->
+    <div class="border-t border-gray-700 dark:border-gray-300 w-2/3 mx-auto"></div>
+    
+    <!-- Copy -->
+    <div class="text-sm text-gray-400 dark:text-gray-600">
+      &copy; <span id="year"></span> <span class="font-semibold">Harish Prabu S</span> — All rights reserved.
+    </div>
+  </div>
+</footer>
+ <!-- External Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r150/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl@2.36.0/dist/globe.gl.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Your Scripts (after page content) -->
+  <script src="gsap.js"></script>
+  <script src="main.js"></script>
+  <script src="email.js"></script>
+  <script src="theme.js"></script>
+  <script src="toggle.js"></script>
+  <script src="typing.js"></script>
+
+</body>
+</html>
+</body>
+</html>
